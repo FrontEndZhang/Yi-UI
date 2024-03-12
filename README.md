@@ -9,3 +9,7 @@ npm init
 
 # 2. 安装并配置全局依赖
 pnpm add -D typescript ts-node -w
+
+# 3. 安装play项目
+pnpm create vite
+
