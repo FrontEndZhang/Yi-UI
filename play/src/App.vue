@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import { sayHi } from "@yi-ui/test"
+
+sayHi('Jia yi')
 </script>
 
 <template>

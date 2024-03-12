@@ -1,6 +1,7 @@
 packages:
-  - packages
-  - components
+  - packages/*
   - play
+  - docs
+  - test
   # exclude packages that are inside test directories
   # - '!**/test/**'

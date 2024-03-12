@@ -13,3 +13,23 @@ pnpm add -D typescript ts-node -w
 # 3. 安装play项目
 pnpm create vite
 
+# 4. 测试
+1. 创建 test 文件夹，目录结构如下
+- test
+    - index.ts
+    - package.json
+
+2. 进入到Yi-Ui/play
+使用 pnpm add @yi-ui/test
+在 src/App.vue, 引入并使用即可
+import { sayHi } from "@yi-ui/test"
+sayHi('Jia yi')
+
+运行
+
+# 5. 安装vitePress
+https://vitepress.dev/zh/guide/getting-started
+
+
+
+
