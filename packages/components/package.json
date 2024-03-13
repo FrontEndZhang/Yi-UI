@@ -11,8 +11,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@yi-ui/utils": "workspace:^"
-  }
+  "license": "ISC"
 }
