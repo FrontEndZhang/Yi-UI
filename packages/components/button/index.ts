@@ -1,8 +1,6 @@
-import { App } from 'vue'
-import Button from './src/button.vue'
+import Button from "./src/button.vue";
+import { withInstall } from '@yi-ui/utils/install'
 
-Button.install = (app: App): void => {
-    app.component("YiButton", Button)
-}
+const YiButton = withInstall(Button)
 
-export { Button }
+export default YiButton;

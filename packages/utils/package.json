@@ -1,5 +1,5 @@
 {
-  "name": "@yi-ui/components",
+  "name": "@yi-ui/utils",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,8 +11,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@yi-ui/utils": "workspace:^"
-  }
+  "license": "ISC"
 }

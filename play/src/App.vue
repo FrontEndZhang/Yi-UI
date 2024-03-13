@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import { sayHi } from "@yi-ui/test"
+import { Button } from "@yi-ui/components";
+import { sayHi } from "@yi-ui/test";
+import HelloWorld from "./components/HelloWorld.vue";
 
-sayHi('Jia yi')
+sayHi("Jia yi");
 </script>
 
 <template>
@@ -15,6 +16,7 @@ sayHi('Jia yi')
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <Button></Button>
 </template>
 
 <style scoped>
@@ -24,9 +26,11 @@ sayHi('Jia yi')
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }

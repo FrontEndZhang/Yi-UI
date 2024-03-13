@@ -30,6 +30,9 @@ sayHi('Jia yi')
 # 5. 安装vitePress
 https://vitepress.dev/zh/guide/getting-started
 
+# 6. 创建组件
+
+
 
 
 

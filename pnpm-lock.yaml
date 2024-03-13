@@ -22,12 +22,33 @@ importers:
 
   packages/components:
     dependencies:
+      '@yi-ui/utils':
+        specifier: workspace:^
+        version: link:../utils
       vue:
         specifier: ^3.2.0
         version: 3.4.21(typescript@5.4.2)
 
+  packages/utils:
+    dependencies:
+      vue:
+        specifier: ^3.2.0
+        version: 3.4.21(typescript@5.4.2)
+
+  packages/yi-ui:
+    dependencies:
+      '@yi-ui/components':
+        specifier: workspace:^
+        version: link:../components
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.4.2)
+
   play:
     dependencies:
+      '@yi-ui/components':
+        specifier: workspace:^
+        version: link:../packages/components
       '@yi-ui/test':
         specifier: workspace:^
         version: link:../test
