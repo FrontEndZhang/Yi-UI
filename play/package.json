@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@yi-ui/components": "workspace:^",
+    "@yi-ui/global-component": "workspace:^",
     "@yi-ui/test": "workspace:^",
     "vue": "^3.4.21"
   },

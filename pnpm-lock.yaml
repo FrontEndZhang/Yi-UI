@@ -49,6 +49,9 @@ importers:
       '@yi-ui/components':
         specifier: workspace:^
         version: link:../packages/components
+      '@yi-ui/global-component':
+        specifier: workspace:^
+        version: link:../packages/yi-ui
       '@yi-ui/test':
         specifier: workspace:^
         version: link:../test

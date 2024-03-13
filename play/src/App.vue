@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Button } from "@yi-ui/components";
 import { sayHi } from "@yi-ui/test";
 import HelloWorld from "./components/HelloWorld.vue";
 
@@ -16,7 +15,7 @@ sayHi("Jia yi");
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <Button></Button>
+  <yi-button></yi-button>
 </template>
 
 <style scoped>

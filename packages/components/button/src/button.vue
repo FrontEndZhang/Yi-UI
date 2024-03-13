@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-const text = ref("click me!");
+const text = ref("click me! ooooo yea");
 
 defineOptions({
   name: 'YiButton',
