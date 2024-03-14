@@ -4,6 +4,7 @@ import { resolve, dirname } from "path";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import esbuild from "rollup-plugin-esbuild";
 import vue from "@vitejs/plugin-vue";
+import css from 'rollup-plugin-css-only'
 import replace from "@rollup/plugin-replace";
 
 const __filenameNew = fileURLToPath(import.meta.url);
@@ -15,17 +16,15 @@ const pkgRoot = resolve(projRoot, "packages");
 // 拼接 ./packages/cobyte-ui 目录路径
 const epRoot = resolve(pkgRoot, "yi-ui");
 
-// 拼接打包根目录
-const buildOutput = resolve(projRoot, "dist");
-// 拼接包目录
-const epOutput = resolve(buildOutput, "yi-ui");
-
 // 请继续浏览下面的内容获取更多关于这个选项的细节
 const inputOptions = {
   external: [""],
   input: resolve(epRoot, "index.ts"), // 配置入口文件
   plugins: [
     vue(),
+    css({
+      output: 'bundle.css'
+    }),
     nodeResolve({
       extensions: [".ts"],
     }),
@@ -42,7 +41,7 @@ const inputOptions = {
 const outputOptionsList = [
   {
     format: "umd",
-    file: resolve(epOutput, "dist", "index.full.js"),
+    file: resolve(projRoot, "dist", "index.full.js"),
     name: "YiUI", // 将整个组件库要设置一个变量名称：`YiUI`
     globals: {
       vue: "Vue", // 组件库中需要使用到的全局变量 Vue

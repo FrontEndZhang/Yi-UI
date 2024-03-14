@@ -1,3 +1,5 @@
+# 学习路程记录
+
 # 0. 安装PNPM
 npm i -g pnpm
 npm init
@@ -32,7 +34,22 @@ https://vitepress.dev/zh/guide/getting-started
 
 # 6. 创建组件
 
+# 7. 打包
+打包错误总结
+第一：set "type": "module" in the package.json
+![alt text](image-1.png)
 
+第二：编译ts rollup-plugin-esbuild 
+![alt text](image.png)
 
+第三：@rollup/plugin-node-resolve
+![alt text](image-2.png)
 
+第四：@vitejs/plugin-vue 
+![alt text](image-3.png)
 
+第五：@rollup/plugin-replace
+![alt text](image-4.png)
+
+第六：rollup-plugin-css-only
+![alt text](image-5.png)

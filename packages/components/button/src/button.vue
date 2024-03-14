@@ -10,3 +10,9 @@ defineOptions({
   name: 'YiButton',
 })
 </script>
+
+<style lang="css" scoped>
+  button {
+    color: red;
+  }
+</style>

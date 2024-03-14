@@ -7,3 +7,9 @@ defineOptions({
   name: 'YiIcon',
 })
 </script>
+
+<style lang="css" scoped>
+  i {
+    color: blue;
+  }
+</style>

@@ -1,8 +1,16 @@
 {
-  "name": "yi-ui",
+  "name": "jiayi-ui",
   "version": "1.0.0",
   "description": "monorepo practice",
-  "main": "index.js",
+  
+  "main": "dist/index.full.js",
+  "type": "module",
+  "module": "./dist/index.full.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm -C play dev"
